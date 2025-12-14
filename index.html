@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moin Dandekar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="light">
+
+<header>
+  <nav class="navbar">
+    <h1 class="logo">Moin Dandekar</h1>
+
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <button id="darkToggle">🌙</button>
+  </nav>
+</header>
+
+<!-- HERO (INTRO + ABOUT COMBINED) -->
+<section class="hero" id="home">
+  <div class="hero-container">
+
+    <!-- LEFT: INTRO -->
+    <div class="hero-left">
+      <h2>Hi, I'm Moin</h2>
+      <p class="subtitle">Java | Frontend | Data Analytics Enthusiast</p>
+
+      <div class="hero-buttons">
+        <a href="_Moin_Dandekar_resume_cv.pdf" download class="btn">
+          Download Resume
+        </a>
+        <a href="https://www.linkedin.com/in/dandekarmoin"
+           target="_blank"
+           class="btn outline">
+          LinkedIn
+        </a>
+      </div>
+    </div>
+
+    <!-- RIGHT: SHORT PROFILE INFO -->
+    <div class="hero-right">
+      <img src="images/profile.jpg" alt="Profile">
+
+      <div class="about-text">
+        <p>
+          Motivated fresher with strong skills in Java, frontend development,
+          and data analytics. I enjoy building real-world applications
+          and clean, user-focused interfaces.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <h2 class="section-title">Projects</h2>
+
+  <div class="projects-grid">
+
+    <!-- FOOTWEAR PROJECT -->
+    <div class="project-card">
+      <div class="slider">
+        <img src="images/Picture1.png" class="slide active">
+        <img src="images/Picture2.png" class="slide">
+        <img src="images/Picture3.png" class="slide">
+        <img src="images/Picture4.png" class="slide">
+        <img src="images/Picture5.png" class="slide">
+        <img src="images/Picture6.png" class="slide">
+        <img src="images/Picture7.png" class="slide">
+
+        <button class="prev">❮</button>
+        <button class="next">❯</button>
+      </div>
+
+      <h3>Offline Footwear Shop – Online Presence</h3>
+      <p>
+        Group project to help an offline footwear shop establish
+        an online presence with product showcase and branding UI.
+      </p>
+      <span class="tag">Group Project</span>
+    </div>
+<!-- MINI PROJECT : CARS24 BI DASHBOARD -->
+<div class="project-card mini-project">
+  <h3>Cars24 BI Dashboard — Power BI</h3>
+  <p class="mini-subtitle">Secondary Project</p>
+  <p>
+    Built a dashboard analyzing <strong>car size, age, trends</strong> from 8,000+ records. Created KPI cards and interactive visuals using Power Query and Power BI.
+  </p>
+  <img src="images/cars24_dashboard.png" alt="Cars24 BI Dashboard" style="width:100%; border-radius:10px; margin-bottom:10px;">
+  <a href="https://drive.google.com/file/d/1C6mIZLOOk-i-SMZbOwUpSAc8mieOdQCM/view" target="_blank" class="btn outline">
+    View Dashboard PDF
+  </a>
+  <span class="tag">Power BI</span>
+</div>
+
+
+    <!-- EXPENSE TRACKER -->
+    <div class="project-card">
+      <img src="images/expense_tracker.png" alt="Expense Tracker">
+      <h3>Expense Tracker</h3>
+      <p>
+        Web app to track daily expenses using Java and frontend technologies.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <h2 class="section-title">Contact Me</h2>
+
+  <form onsubmit="sendMessage(event)">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+
+<footer>
+  <p>© 2025 Moin</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
