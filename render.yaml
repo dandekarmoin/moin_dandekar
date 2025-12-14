@@ -1,0 +1,9 @@
+services:
+  - type: "static_site"
+    name: "myportfolio"
+    repo: "https://github.com/dandekarmoin/myportfolio.git"
+    branch: "main"
+    root: "."
+    buildCommand: ""
+    publishPath: ""
+    env: "static"
