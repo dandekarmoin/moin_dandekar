@@ -41,31 +41,31 @@ setInterval(() => {
 }, 5000);
 
 
-const form = document.getElementById("contactForm");
-const responseMsg = document.getElementById("responseMsg");
+// const form = document.getElementById("contactForm");
+// const responseMsg = document.getElementById("responseMsg");
 
-form.addEventListener("submit", async (e) => {
-  e.preventDefault();
+// form.addEventListener("submit", async (e) => {
+//   e.preventDefault();
 
-  const formData = new FormData(form);
-  const data = new URLSearchParams(formData);
+//   const formData = new FormData(form);
+//   const data = new URLSearchParams(formData);
 
-  try {
-    const response = await fetch("AKfycbzG3U22WIdsjXzwEH2xovTuP_gL6Zwrltt3NgN_NLBd", {
-      method: "POST",
-      body: data
-    });
+//   try {
+//     const response = await fetch("AKfycbzG3U22WIdsjXzwEH2xovTuP_gL6Zwrltt3NgN_NLBd", {
+//       method: "POST",
+//       body: data
+//     });
 
-    const result = await response.json();
+//     const result = await response.json();
 
-    if (result.result === "success") {
-      responseMsg.textContent = "Message sent! ✅";
-      form.reset();
-    } else {
-      responseMsg.textContent = "Error sending message ❌";
-    }
-  } catch (err) {
-    responseMsg.textContent = "Error sending message ❌";
-    console.error(err);
-  }
-});
+//     if (result.result === "success") {
+//       responseMsg.textContent = "Message sent! ✅";
+//       form.reset();
+//     } else {
+//       responseMsg.textContent = "Error sending message ❌";
+//     }
+//   } catch (err) {
+//     responseMsg.textContent = "Error sending message ❌";
+//     console.error(err);
+//   }
+// });
