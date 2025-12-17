@@ -77,7 +77,7 @@ body.dark .hero {
 /* Place about-text in right column below hero-right on larger screens */
 .about-text {
   grid-column: 2;
-  grid-row: 2;
+  grid-row: 2
 }
 
 /* Ensure hero-right sits top-right on larger screens but stacks below on mobile */
@@ -107,6 +107,24 @@ body.dark .hero {
   object-fit: cover;
   border-radius: 50%;
   border: 6px solid rgba(255,255,255,0.92);
+}
+
+/* Contact email styling */
+.contact-email {
+  grid-column: 2;
+  margin-top: 10px;
+  text-align: center;
+  
+}
+
+.contact-email a {
+  color: #0369a1;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .contact-email { grid-column: auto; }
 }
 
 .hero-left h2 {
