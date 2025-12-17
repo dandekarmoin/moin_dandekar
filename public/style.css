@@ -74,6 +74,12 @@ body.dark .hero {
   align-items: center;
 }
 
+/* Place about-text in right column below hero-right on larger screens */
+.about-text {
+  grid-column: 2;
+  grid-row: 2;
+}
+
 .hero-left h2 {
   font-size: 42px;
 }
@@ -124,6 +130,38 @@ body.dark .hero-right {
   border-radius: 50%;
   object-fit: cover;
   border: 4px solid #38bdf8;
+}
+
+/* Responsive: stack hero layout for small screens — intro, about, then profile image */
+@media (max-width: 768px) {
+  .hero-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0;
+  }
+
+  .hero-left h2 {
+    font-size: 32px;
+  }
+
+  .hero-right {
+    justify-content: center;
+    padding: 10px;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .hero-right img {
+    width: 160px;
+    height: 160px;
+    border-width: 3px;
+  }
+
+  .about-text {
+    grid-column: auto;
+    grid-row: auto;
+    max-width: none;
+  }
 }
 
 .about-text h3 {
